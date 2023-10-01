@@ -20,7 +20,6 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(secondScreen, animated: true)
     }
     
-    
     @IBAction private func nextButtonThirdScreenAction() {
         let SecondScreenStoryboard = UIStoryboard(name: "StoryboardExample", bundle: nil)
         let thirdScreen = SecondScreenStoryboard.instantiateViewController(withIdentifier: "Example")
@@ -45,8 +44,3 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(thirdScreen, animated: true)
     }
 }
-
-
-
-
-
