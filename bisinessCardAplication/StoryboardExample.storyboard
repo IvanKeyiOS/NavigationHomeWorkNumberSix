@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w4e-wJ-EYG">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Example" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="ViewController" customModule="bisinessCardAplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVl-ga-laM">
+                                <rect key="frame" x="129.66666666666669" y="435.33333333333331" width="133.66666666666669" height="50.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next  ➡️" cornerStyle="large">
+                                    <backgroundConfiguration key="background" strokeWidth="2">
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextButtonFourthScreenAction" destination="Y6W-OH-hqX" eventType="touchUpInside" id="U3b-Kr-Zdf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I like to listen music 🎧 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8J-H1-Onp">
+                                <rect key="frame" x="16" y="238.33333333333337" width="361" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GVl-ga-laM" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="0cw-hj-JMj"/>
+                            <constraint firstItem="d8J-H1-Onp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="B1M-MS-i5t"/>
+                            <constraint firstItem="GVl-ga-laM" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="Gk2-xZ-Gww"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="d8J-H1-Onp" secondAttribute="trailing" constant="16" id="d4J-hW-YAe"/>
+                            <constraint firstItem="GVl-ga-laM" firstAttribute="top" secondItem="d8J-H1-Onp" secondAttribute="bottom" constant="161" id="oxJ-4w-zBg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AbJ-TT-HPY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057.2519083969464" y="-28.169014084507044"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZK3-CN-317">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w4e-wJ-EYG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v7m-NQ-2fh">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="yr1-uf-7S8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zta-ZV-cXL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-28.169014084507044"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

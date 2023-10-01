@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ld0-bF-rqc">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="View" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="bisinessCardAplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCO-SR-X8u">
+                                <rect key="frame" x="129.66666666666669" y="435.33333333333331" width="133.66666666666669" height="50.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next  ➡️" cornerStyle="large">
+                                    <backgroundConfiguration key="background" strokeWidth="2">
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextButtonSecondScreenAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="FMZ-4l-EWy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Name is Ivan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qov-28-3ML">
+                                <rect key="frame" x="91" y="238.33333333333337" width="211" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qov-28-3ML" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5YB-MM-3SH"/>
+                            <constraint firstItem="pCO-SR-X8u" firstAttribute="top" secondItem="Qov-28-3ML" secondAttribute="bottom" constant="161" id="KGn-W6-jCu"/>
+                            <constraint firstItem="pCO-SR-X8u" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="T0N-On-763"/>
+                            <constraint firstItem="pCO-SR-X8u" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="V6B-nY-Ms0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="73V-pt-gHm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054.1984732824426" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CXu-4a-ub4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ld0-bF-rqc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F4W-8q-RTD">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ny5-Fi-7FD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wDG-yy-1uO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127.48091603053435" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
